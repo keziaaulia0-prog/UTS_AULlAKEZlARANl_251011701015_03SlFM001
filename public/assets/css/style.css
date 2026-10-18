@@ -1,0 +1,287 @@
+:root {
+    --merah: #e63946;
+    --gelap: #1d2a44;
+    --biru: #3b5b8f;
+    --muda: #f2f5fa;
+}
+
+html, body { height: 100%; }
+
+body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    color: #26324a;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main { flex: 1; padding-bottom: 3rem; }
+
+/* Navbar */
+.navbar-rental { background: var(--gelap); }
+.navbar-rental .navbar-brand { color: #fff; font-weight: 800; letter-spacing: .5px; }
+.navbar-rental .navbar-brand span { color: var(--merah); }
+.navbar-rental .nav-link { color: #c9d4ea; font-weight: 500; }
+.navbar-rental .nav-link:hover,
+.navbar-rental .nav-link.active { color: #fff; }
+.navbar-rental .nav-link.active { border-bottom: 2px solid var(--merah); }
+
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, var(--gelap) 0%, var(--biru) 100%);
+    color: #fff;
+    padding: 70px 0;
+    overflow: hidden;
+}
+.hero .welcome { letter-spacing: 3px; text-transform: uppercase; color: #ffb3b9; font-weight: 600; }
+.hero h1 { font-weight: 800; font-size: 3rem; }
+.hero .identitas {
+    background: rgba(255, 255, 255, .1);
+    border-left: 4px solid var(--merah);
+    border-radius: 10px;
+    padding: 14px 20px;
+    display: inline-block;
+    line-height: 1.7;
+}
+.hero img { max-width: 100%; filter: drop-shadow(0 12px 18px rgba(0, 0, 0, .35)); }
+
+/* Judul section */
+.section-title { font-weight: 700; color: var(--gelap); }
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--merah);
+    border-radius: 4px;
+    margin-top: 8px;
+}
+.text-center .section-title::after { margin-left: auto; margin-right: auto; }
+
+/* Card mobil */
+.card-car {
+    border: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(29, 42, 68, .12);
+    transition: transform .2s, box-shadow .2s;
+}
+.card-car:hover { transform: translateY(-6px); box-shadow: 0 12px 28px rgba(29, 42, 68, .2); }
+.card-car img { height: 190px; object-fit: cover; background: var(--muda); }
+.harga { color: var(--merah); font-weight: 700; font-size: 1.1rem; }
+.badge-trans { background: var(--muda); color: var(--biru); font-weight: 600; }
+
+/* Tombol */
+.btn-rental { background: var(--merah); border-color: var(--merah); color: #fff; }
+.btn-rental:hover { background: #c92f3b; border-color: #c92f3b; color: #fff; }
+.btn-outline-rental { border-color: var(--biru); color: var(--biru); }
+.btn-outline-rental:hover { background: var(--biru); color: #fff; }
+
+/* Kotak info */
+.info-box { background: var(--muda); border-radius: 16px; padding: 26px; height: 100%; }
+.info-box .ikon { font-size: 2.2rem; }
+
+/* Detail */
+.detail-gambar {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 6px 22px rgba(29, 42, 68, .18);
+}
+.tabel-spesifikasi th { width: 40%; color: #5b6784; font-weight: 600; }
+.kalkulator { background: var(--muda); border-radius: 14px; padding: 18px; }
+.kalkulator .total { font-size: 1.5rem; font-weight: 800; color: var(--merah); }
+
+/* Pagination */
+.pagination .page-link { color: var(--biru); }
+.pagination .active .page-link { background: var(--merah); border-color: var(--merah); color: #fff; }
+
+/* Footer */
+.footer-rental { background: var(--gelap); color: #c9d4ea; }
+
+/* berandaa  */
+:root { --oranye: #f26b21; --biru-harga: #3b82f6; --gelap-2: #232b38; }
+
+.btn-oranye { background: var(--oranye); border-color: var(--oranye); color: #fff; }
+.btn-oranye:hover { background: #d95a14; border-color: #d95a14; color: #fff; }
+.btn-biru { background: var(--biru-harga); border-color: var(--biru-harga); color: #fff; font-weight: 600; }
+.btn-biru:hover { background: #2563eb; color: #fff; }
+
+/* Hero */
+.hero-motors {
+    background: linear-gradient(120deg, #0f1722 0%, #1d2a44 55%, #2d4a7a 100%);
+    color: #fff;
+    padding: 70px 0 90px;
+    overflow: hidden;
+}
+.hero-motors h1 { font-weight: 800; font-size: 3rem; }
+.hero-motors .welcome-kecil { letter-spacing: 3px; text-transform: uppercase; color: #ffb27d; font-weight: 600; }
+.hero-motors .identitas {
+    background: rgba(255, 255, 255, .1);
+    border-left: 4px solid var(--oranye);
+    border-radius: 10px;
+    padding: 14px 20px;
+    display: inline-block;
+    line-height: 1.7;
+}
+.hero-mobil { max-width: 100%; filter: drop-shadow(0 14px 20px rgba(0, 0, 0, .4)); }
+.lingkaran-harga {
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background: var(--oranye);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .35);
+    border: 4px solid rgba(255, 255, 255, .35);
+}
+.lingkaran-harga strong { font-size: 1.25rem; line-height: 1.2; }
+
+/* Section gelap */
+.section-gelap { background: var(--gelap-2); color: #fff; padding: 60px 0; }
+.judul-gelap { font-weight: 800; font-size: 1.6rem; }
+.judul-gelap span { color: var(--oranye); }
+.link-terang { color: #cdd6e4; text-decoration: none; }
+.link-terang:hover { color: #fff; }
+
+/* Tab */
+.tabs-motors { gap: 4px; }
+.tabs-motors .nav-link {
+    background: #343f4f;
+    color: #c9d1dc;
+    border-radius: 0;
+    font-size: .85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 8px 18px;
+}
+.tabs-motors .nav-link.active { background: #fff; color: #222; }
+
+/* Kartu kecil */
+.mini-card { display: block; background: #fff; color: #222; text-decoration: none; height: 100%; transition: transform .2s; }
+.mini-card:hover { transform: translateY(-4px); color: #222; }
+.mini-img { position: relative; }
+.mini-img img { width: 100%; height: 120px; object-fit: cover; display: block; }
+.label-harga {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: var(--biru-harga);
+    color: #fff;
+    font-weight: 700;
+    font-size: .78rem;
+    padding: 3px 10px;
+}
+.mini-body { padding: 10px 12px 6px; font-weight: 700; font-size: .8rem; }
+.mini-foot { display: flex; justify-content: space-between; padding: 6px 12px; border-top: 1px solid #eee; font-size: .72rem; color: #777; }
+
+/* Kotak ajakan */
+.cta-box { display: flex; gap: 20px; align-items: center; padding: 30px; height: 100%; }
+.cta-ikon { font-size: 3rem; }
+.cta-box h4 { font-weight: 700; }
+.cta-kuning { background: #fbbf24; color: #222; }
+.cta-merah { background: #f65b5b; color: #fff; }
+
+/* Promo */
+.promo-card { background: #2f3947; overflow: hidden; height: 100%; }
+.promo-card img { width: 100%; height: 190px; object-fit: cover; display: block; }
+.promo-body { padding: 18px; }
+.promo-harga { font-size: 1.3rem; font-weight: 800; color: var(--oranye); margin-bottom: 12px; }
+.promo-harga small { color: #c9d1dc; font-weight: 400; font-size: .8rem; }
+
+@media (max-width: 991px) {
+    .lingkaran-harga { width: 130px; height: 130px; top: 0; }
+    .hero-motors h1 { font-size: 2.2rem; }
+}
+
+/* KONTAK */
+.hero-kontak {
+    position: relative;
+    background: linear-gradient(120deg, #1d2a44 0%, #3b5b8f 55%, #4aa3c7 100%);
+    color: #fff;
+    padding: 80px 0 150px;
+    text-align: center;
+    overflow: hidden;
+}
+.hero-kontak::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('../images/hero-car.svg') no-repeat right 5% bottom 20px / 420px;
+    opacity: .12;
+}
+.hero-kontak .container { position: relative; }
+.hero-kontak h1 { font-weight: 800; font-size: 3rem; }
+.hero-kontak p { opacity: .9; max-width: 560px; margin: 12px auto 0; }
+
+.kontak-wrap { margin-top: -90px; position: relative; z-index: 2; }
+.kontak-card {
+    background: #fff;
+    border-radius: 6px;
+    border-top: 4px solid var(--oranye);
+    box-shadow: 0 8px 30px rgba(29, 42, 68, .15);
+    padding: 36px 28px;
+    text-align: center;
+    height: 100%;
+}
+.kontak-ikon {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: var(--muda);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto 18px;
+}
+.kontak-card h5 { font-weight: 700; margin-bottom: 12px; }
+.kontak-card p { color: #5b6784; margin: 0; }
+.kontak-card .kontak-info { color: var(--biru); font-weight: 600; font-size: 1.05rem; }
+
+/*  tentanggg */
+.tentang-gambar {
+    background: linear-gradient(135deg, var(--gelap) 0%, var(--biru) 100%);
+    border-radius: 16px;
+    padding: 40px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 280px;
+    box-shadow: 0 6px 22px rgba(29, 42, 68, .18);
+}
+.tentang-gambar img {
+    max-width: 100%;
+    filter: drop-shadow(0 12px 16px rgba(0, 0, 0, .4));
+}
+
+/* logo rentalll */
+.logo-navbar { height: 46px; width: auto; display: block; }
+
+.card-car img {
+    height: 190px;
+    object-fit: contain;
+    background: #fff;
+    padding: 8px;
+}
+
+.mini-img img {
+    height: 130px;
+    object-fit: contain;
+    background: #fff;
+    padding: 4px;
+}
+
+.promo-card img {
+    object-fit: contain;
+    background: #fff;
+    padding: 8px;
+}
